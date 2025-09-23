@@ -14,7 +14,6 @@
     $ docker run --ipc=host -d --name development --privileged -e DISPLAY=$DISPLAY --security-opt seccomp=unconfined --cgroup-parent=docker.slice --cgroupns private --tmpfs /tmp --tmpfs /run --tmpfs /run/lock -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /etc/group:/etc/group:rw -v /etc/passwd:/etc/passwd:rw -v /etc/shadow:/etc/shadow:rw -v /home/$USER/.Xauthority:/home/$USER/.Xauthority:rw -v /home/$USER/sandbox:/home/$USER/sandbox:rw --network host tdevelopment:latest
     $ docker exec -it development bash 
     ```
-1. Create a user folder in the container by running: `# /root/setup_user.sh -u <USER> -H <HOME> ` (**The USER must match one of the users on your host system**)
 1. `# su kali` (Assuming there is a kali user on your host system)
 1. `$ cd /home/kali`
 1. Download Eclipse CDT (C/C++ IDE) for 64-bit Linux in your container using - `$ wget https://0ms.dev/mirrors/eclipse//technology/epp/downloads/release/2024-09/R/eclipse-cpp-2024-09-R-linux-gtk-x86_64.tar.gz`
