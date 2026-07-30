@@ -1,4 +1,8 @@
-EN.650.660 Software Vulnerability Analysis
+Copyright 2026 Reuben Johnston
+
+Permission is granted to use these materials for instructional purposes.  Redistribution, publication, or modification for commercial purposes requires written permission from the copyright holder.
+
+Software Vulnerability Analysis
 
 This repository contains multiple Docker images that support activities in the course.
 
