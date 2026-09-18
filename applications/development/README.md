@@ -38,6 +38,17 @@
 1. Ghidra may be started via - `$ ghidra`
      * When you run ghidra the first time, point it to the $JAVA_HOME folder
 # Notes
+* Run this from VM to allow xauth to work with container:
+```
+$ xhost +local:docker
+```
+* Test in container
+```
+$ apt-get install x11-apps
+$ xeyes
+```
+
+** old **
 1. Setup xauth with client container
     1. Generate a MIT_MAGIC_COOKIE-1 by running on VM: `$ mcookie`
     1. Get <COOKIEHASH> hash by running on VM: `$ xauth list`
